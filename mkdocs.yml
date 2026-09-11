@@ -1,0 +1,62 @@
+site_name: Bras Robotique — Robot Ramasseur de Déchets
+site_description: Documentation du projet de robot ramasseur de déchets (bras articulé + châssis mobile)
+site_url: https://club-ia-imsp.github.io/Bras_robotique_ramasseur_de_dechets/
+repo_url: https://github.com/club-ia-imsp/Bras_robotique_ramasseur_de_dechets
+repo_name: club-ia-imsp/Bras_robotique_ramasseur_de_dechets
+
+theme:
+  name: material
+  language: fr
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: Basculer en mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: Basculer en mode clair
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Accueil: index.md
+  - Cahier des charges: cahier-des-charges.md
+  - Version en cours (2026): version-en-cours.md
+  - Versions antérieures:
+      - Version 1 — Téléopéré par manettes: versions-anterieures/version-1/index.md
+      - Version 2 — Téléopéré par mouvements de la main: versions-anterieures/version-2/index.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/club-ia-imsp
