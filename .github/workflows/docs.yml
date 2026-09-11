@@ -3,7 +3,7 @@ name: Déploiement de la documentation
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: write
